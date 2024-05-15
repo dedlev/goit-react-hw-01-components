@@ -3,7 +3,7 @@ body {
 }
 
 .profile {
-   width: 700px;
+   width: 500px;
    margin: 0 auto;
     background-color: white;
 }
@@ -38,53 +38,40 @@ margin: 50px auto 0px;
 
 .location {
         font-size: 20px;
-    margin: 10px;
+    margin: 10px 0 40PX;
         align-self: center;
 }
 
 .stats {
-    height: 100px;
+    height: 120px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     font-size: 20px;
-    padding: 20px 0;
-    background-color: beige;
+    padding-left: 0;
+    background-color: rgba(241, 241, 236, 0.679);
     list-style-type: none;
-    border: 1px solid rgb(184, 177, 177);
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
             0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 
-.stats::before {
-    position: absolute;
-    content: '';
-    bottom: 65px;
-    right: 620px;
-    display: block;
-    height: 18%;
-    width: 1px;
-    background-color: grey;
-}
+ .item {
+    width: 33.33%;   
+ }
 
-.stats::after {
-        position: absolute;
-        content: '';
-        bottom: 65px;
-        left: 650px;
-        display: block;
-        height: 18%;
-        width: 1px;
-        background-color: grey;
-    }
+ .item + .item {
+    border-left: 1px solid grey;
+ }
 
 .label {
     display: block;
-    margin-bottom: 20px;
+    padding: 30px 0 10px;
+    text-align: center;
 }
 
 .quantity {
         display: block;
-    margin: 5px;
+        padding-bottom: 30px;
+        text-align: center;
 }

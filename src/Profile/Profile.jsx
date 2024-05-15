@@ -1,4 +1,4 @@
-import user from "components/user.json"
+import user from "../components/user.json"
 import css from "./Profile.module.css"
 
 export const Profile = () => {
@@ -15,21 +15,29 @@ export const Profile = () => {
                 <p className={css.tag}>@{tag}</p>
             <p className={css.location}>{location}</p>
         </div>
-
-            <ul className={css.stats}>
-            <li>
+            <ul className={css.stats}>              
+                <li className={css.item}>
                     <span className={css.label}>Followers</span>
                     <span className={css.quantity}>{followers}</span>
-            </li>
-            <li>
+                </li>
+                <li className={css.item}>
                     <span className={css.label}>Views</span>
                     <span className={css.quantity}>{views}</span>
-            </li>
-            <li>
+                </li>
+                <li className={css.item}>
                     <span className={css.label}>Likes</span>
                     <span className={css.quantity}>{likes}</span>
-            </li>
-        </ul>
+                </li> 
+           
+            </ul>
         </div>
     )
 } 
+
+
+            // {user.map((user) => (
+            //     <li className={css.item}>
+            //         <span className={css.label}>{user.stats}</span>
+            //         <span className={css.quantity}>{followers}</span>
+            //     </li>
+            // ))}
