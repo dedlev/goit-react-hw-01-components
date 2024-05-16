@@ -1,11 +1,14 @@
-.title {
+.statistics {
+  width: 500px;
   margin: 0 auto;
+}
+
+.title {
+font-size: 30px;
 }
 
 .stat_list {
   display: flex;
-  width: 500px;
-  margin: 0 auto;
   justify-content: space-around;
   align-items: center;
   list-style-type: none;

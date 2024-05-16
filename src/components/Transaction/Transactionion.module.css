@@ -1,0 +1,15 @@
+.transaction_history {
+  width: 500px;
+  margin: 0 auto;
+  font-size: 20px;
+}
+
+.head {
+  padding: 10px 0 10px;
+  background-color: #7dc9f3;
+}
+
+.item {
+  text-align: center;
+}
+

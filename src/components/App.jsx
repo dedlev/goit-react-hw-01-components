@@ -1,13 +1,15 @@
 import { Profile } from "Profile/Profile"
 import { Statistics } from "./Statistics/Statistics"
-import { StatisticsTitle } from "./Statistics/StatisticsTitle"
+import { FriendList } from "./FriendList/FriendList"
+import { Transaction } from "./Transaction/Transaction"
 
 export const App = () => {
   return (
     <>
       <Profile />
-      <StatisticsTitle />
       <Statistics />
+      <FriendList />
+      <Transaction />
     </>
      
   )
