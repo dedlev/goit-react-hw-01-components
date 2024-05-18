@@ -1,4 +1,4 @@
-import user from "../components/user.json"
+import user from "../user.json"
 import css from "./Profile.module.css"
 
 export const Profile = () => {
