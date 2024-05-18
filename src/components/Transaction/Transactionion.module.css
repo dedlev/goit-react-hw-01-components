@@ -2,14 +2,24 @@
   width: 500px;
   margin: 0 auto;
   font-size: 20px;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2); 
 }
 
-.head {
+th {
   padding: 10px 0 10px;
   background-color: #7dc9f3;
 }
 
-.item {
+tr {
   text-align: center;
-}
+  font-size: 15px;
+  }
 
+  tr:nth-child(even) {
+    background-color: rgb(204, 204, 204);
+  }
+
+  td {
+    padding: 5px 0;
+  }

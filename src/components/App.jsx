@@ -1,4 +1,4 @@
-import { Profile } from "Profile/Profile"
+import { Profile } from "components/Profile/Profile"
 import { Statistics } from "./Statistics/Statistics"
 import { FriendList } from "./FriendList/FriendList"
 import { Transaction } from "./Transaction/Transaction"

@@ -4,7 +4,7 @@ import css from "./Transactionion.module.css"
 export const Transaction = () => {
   return (
     <table className={css.transaction_history}>
-  <thead className={css.head}>
+  <thead>
     <tr>
       <th>Type</th>
       <th>Amount</th>
