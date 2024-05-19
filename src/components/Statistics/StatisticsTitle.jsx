@@ -1,10 +1,10 @@
 import data from "../data.json"
 import css from "./Statistics.module.css"
 
-export const StatisticsTitle = ({title}) => {
+export const StatisticsTitle = () => {
   return (
 <section className="statistics">
-    {title && <h2 className={css.title}>{title}</h2>}
+    {data.title && <h2 className={css.title}>{data.title}</h2>}
   </section>
   )
   }
