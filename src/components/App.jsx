@@ -1,16 +1,29 @@
-import { Profile } from "components/Profile/Profile"
-import { Statistics } from "./Statistics/Statistics"
-import { FriendList } from "./FriendList/FriendList"
-import { Transaction } from "./Transaction/Transaction"
+import user from './data/user.json';
+import data from './data/data.json';
+import friends from './data/friends.json';
+import transactions from './data/transactions.json';
+
+import { Profile } from 'components/Profile/Profile';
+import { Statistics } from './Statistics/Statistics';
+import { FriendList } from './FriendList/FriendList';
+import { FriendListItem } from './FriendList/FriendListItem';
+import { Transaction } from './Transaction/Transaction';
 
 export const App = () => {
   return (
     <>
-      <Profile />
-      <Statistics />
-      <FriendList />
-      <Transaction />
+      <Profile
+        username={user.username}
+        tag={user.tag}
+        location={user.location}
+        avatar={user.avatar}
+        stats={user.stats}
+      />
+      <Statistics title="Upload stats" stats={data} />
+      <FriendList>
+        <FriendListItem friends={friends} />
+      </FriendList>
+      <Transaction transactions={transactions} />
     </>
-     
-  )
-}
+  );
+};

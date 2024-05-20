@@ -1,10 +1,10 @@
-import { FriendListItem } from "./FriendListItem"
-import css from "./FriendList.module.css"
+import PropTypes from 'prop-types';
+import css from './FriendList.module.css';
 
-export const FriendList = () => {
-    return (
-    <ul className={css.friend_list}> 
-<FriendListItem/>
-    </ul>
-  )
-}
+export const FriendList = ({ children }) => {
+  return <ul className={css.friend_list}>{children}</ul>;
+};
+
+FriendList.propTypes = {
+  children: PropTypes.node,
+};
