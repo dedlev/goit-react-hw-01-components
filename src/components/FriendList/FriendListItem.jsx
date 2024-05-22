@@ -2,9 +2,9 @@ import PropTypes from 'prop-types';
 import css from './FriendList.module.css';
 import clsx from 'clsx';
 
-export const FriendListItem = ({ id, isOnline, avatar, name }) => {
+export const FriendListItem = ({ isOnline, avatar, name }) => {
   return (
-    <li className={css.item} key={id}>
+    <li className={css.item}>
       <span
         className={clsx(
           css.status,
@@ -19,7 +19,6 @@ export const FriendListItem = ({ id, isOnline, avatar, name }) => {
 };
 
 FriendListItem.propTypes = {
-  id: PropTypes.number.isRequired,
   avatar: PropTypes.string,
   name: PropTypes.string,
   isOnline: PropTypes.bool,
